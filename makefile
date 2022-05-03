@@ -42,7 +42,8 @@ test: TC1_INP := + 1 2
 test: TC1_OUT := 3
 test: TC2_INP := + 2000000000 2000000000
 test: TC2_OUT := 4000000000
-
 test:
 	@$(call test_case,$(TC1_INP),$(TC1_OUT))
 	@$(call test_case,$(TC2_INP),$(TC2_OUT))
+	@$(call test_case,$(TC3_INP),$(TC3_OUT))
+	@$(call test_case,$(TC4_INP),$(TC4_OUT))
